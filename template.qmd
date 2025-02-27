@@ -35,10 +35,10 @@ ekeywords: [template, demo]
 
 ejournal: Chinese Journal of Geotechnical Engineering
 cjournal: 岩$~~$土$~~$工$~~$程$~~$学$~~$报
+eyearmonth: May, 2017
+cyearmonth: 2017 年 5 月
 volume: xx
 number: xx
-yearmonth: May, 2017
-cyearmonth: 2017 年 5 月
 
 classification: TP18
 document_code: A

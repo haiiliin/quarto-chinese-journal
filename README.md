@@ -35,10 +35,10 @@ format:
 - `ekeywords`: 英文关键词
 - `ejournal`: 英文期刊名
 - `cjournal`: 中文期刊名
+- `eyearmonth`: 英文年月
+- `cyearmonth`: 中文年月
 - `volume`: 卷号
 - `number`: 期号
-- `yearmonth`: 英文年月
-- `cyearmonth`: 中文年月
 - `classification`: 中图分类号
 - `document_code`: 文献标识码
 - `article_number`: 文章编号
