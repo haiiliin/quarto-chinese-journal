@@ -9,5 +9,5 @@ contributes:
       documentclass: article
       classoption: a4paper,onecolumn,twoside
       cite-method: biblatex
-      biblio-style: gb7714-2005
+      biblio-style: gb7714-2015
       biblatexoptions: backend=biber,natbib=true,maxcitenames=2,uniquename=false,uniquelist=false
