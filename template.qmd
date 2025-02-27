@@ -3,6 +3,7 @@ title: Quarto Chinese Journal Template
 ctitle: 中文期刊的 Quarto 模板
 format:
   html:
+    lang: zh
     toc: true
     code-fold: true
     appendix-cite-as: display
