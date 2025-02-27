@@ -1,0 +1,13 @@
+title: Chinese Journal Template
+author: Hailin Wang
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    pdf:
+      template-partials: ["partials/before-title.tex", "partials/before-body.tex", "partials/after-body.tex"]
+      documentclass: article
+      classoption: a4paper,onecolumn,twoside
+      cite-method: biblatex
+      biblio-style: gb7714-2005
+      biblatexoptions: backend=biber,natbib=true,maxcitenames=2,uniquename=false,uniquelist=false

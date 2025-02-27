@@ -1,0 +1,72 @@
+% \maketitle%生成标题  
+\thispagestyle{plain}
+\begin{center}
+ \parbox{\textwidth}{
+   \begin{center}
+     \vspace{20pt}
+     {\sanhao{\textbf{$ctitle$}}}\\
+     \vspace{3pt}
+   \end{center}
+   \begin{center}
+      \textbf{
+        $for(cauthor/allbutlast)$$cauthor$，$endfor$
+        $for(cauthor/last)$$cauthor$$endfor$
+      }\\[2pt]
+      \small{(
+        $for(caffiliation/allbutlast)$$caffiliation$；$endfor$
+        $for(caffiliation/last)$$caffiliation$$endfor$
+      )}\\[2pt]
+   \end{center}
+   {\small{\textbf{摘~要：}$cabstract$ \\
+   \textbf{关键字：}
+      $for(ckeywords/allbutlast)$$ckeywords$； $endfor$
+      $for(ckeywords/last)$$ckeywords$$endfor$ \\
+   \textbf{中图分类号：}$classification$ \hfill \textbf{文献标志码：}$document_code$ \hfill \textbf{文章编号：}$article_number$ \\
+   \textbf{作者简介}：$author_introduction$
+ }}
+}
+\end{center}
+
+\begin{center}
+ \parbox{\textwidth}{
+   \begin{center}
+      \vspace{20pt}
+      {\sanhao{\textbf{$title$}}}\\
+   \end{center}
+   \begin{center}
+      \textbf{
+        $for(by-author/allbutlast)$
+          $by-author.name.literal$
+          \textsuperscript{
+            $it.number$$if(by-author.attributes.corresponding)$*$endif$
+          },
+        $endfor$
+        $for(by-author/last)$
+          $by-author.name.literal$
+          \textsuperscript{
+            $it.number$$if(by-author.attributes.corresponding)$*$endif$
+          }
+        $endfor$
+      }\\[2pt]
+      \small{(
+        $for(by-affiliation/allbutlast)$$it.number$ $it.name$;$endfor$
+        $for(by-affiliation/last)$$it.number$ $it.name$$endfor$
+      )}\\[2pt]
+   \end{center}
+   {\small{\textbf{Abstract:}\quad $abstract$ \\
+    \textbf{Keywords:}\quad 
+      $for(keywords/allbutlast)$$keywords$；$endfor$
+      $for(keywords/last)$$keywords$$endfor$
+   }}
+ }
+\end{center}
+
+\noindent{
+  \footnote{\noindent 
+    {\textbf{收稿日期}：$received_date$；\textbf{修回日期}：} $revised_date$ \\ 
+    \textbf{基金项目}：$funds$ \\
+    \textbf{作者简介}：$author_introduction$
+  }.
+}
+
+\begin{multicols}{2}
