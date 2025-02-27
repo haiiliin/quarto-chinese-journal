@@ -46,6 +46,7 @@ format:
 - `revised_date`: 修回日期
 - `funds`: 基金项目详情
 - `author_introduction`: 作者简介
+- `corresponding_email`: 通讯作者邮箱
 
 ## Example
 
