@@ -39,20 +39,16 @@
       \textbf{
         $for(by-author/allbutlast)$
           $by-author.name.literal$
-          \textsuperscript{
-            $it.number$$if(by-author.attributes.corresponding)$*$endif$
-          },
+          \textsuperscript{$for(by-author.affiliations/allbutlast)$$it.number$,$endfor$$for(by-author.affiliations/last)$$it.number$$endfor$$if(by-author.attributes.corresponding)$,*$endif$},
         $endfor$
         $for(by-author/last)$
           $by-author.name.literal$
-          \textsuperscript{
-            $it.number$$if(by-author.attributes.corresponding)$*$endif$
-          }
+          \textsuperscript{$for(by-author.affiliations/allbutlast)$$it.number$,$endfor$$for(by-author.affiliations/last)$$it.number$$endfor$$if(by-author.attributes.corresponding)$,*$endif$}
         $endfor$
       }\\[2pt]
       \small{
-        ($for(by-affiliation/allbutlast)$$it.number$ $it.name$;$endfor$
-        $for(by-affiliation/last)$$it.number$ $it.name$$endfor$)}\\[7pt]
+        ($for(by-affiliation/allbutlast)$$it.number$. $it.name$;$endfor$
+        $for(by-affiliation/last)$$it.number$. $it.name$$endfor$)}\\[7pt]
    \end{center}
    {
     \small{
