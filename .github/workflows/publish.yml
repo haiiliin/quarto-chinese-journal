@@ -37,6 +37,11 @@ jobs:
       - name: Setup pandoc
         uses: pandoc/actions/setup@v1
 
+      - name: Install texlive
+        run: |
+          sudo apt update
+          sudo apt install -y texlive-latex-extra texlive-xetex texlive-publishers texlive-lang-chinese texlive-bibtex-extra texlive-science biber
+
       - name: Render Quarto Project
         run: |
           quarto render --output-dir outputs
