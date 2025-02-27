@@ -23,11 +23,11 @@ keywords: [template, demo]
 bibliography: bibliography.bib
 
 cauthor:
-  - 张三 \textsuperscript{1*}
+  - 张三 \textsuperscript{1,*}
   - 李四 \textsuperscript{2}
 caffiliation:
-  - 1 清华大学
-  - 2 北京大学
+  - 1. 清华大学
+  - 2. 北京大学
 cabstract: |
   这是一个中文期刊的 Quarto 模板。
 ckeywords: [模板, 示例]
