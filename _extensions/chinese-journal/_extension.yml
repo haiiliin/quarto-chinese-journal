@@ -7,7 +7,9 @@ contributes:
     pdf:
       template-partials: ["partials/before-title.tex", "partials/before-body.tex", "partials/after-body.tex"]
       documentclass: article
-      classoption: a4paper,onecolumn,twoside
+      pdf-engine: xelatex
+      papersize: a4
+      twoside: true
       cite-method: biblatex
       biblio-style: gb7714-2015
       biblatexoptions: backend=biber,natbib=true,maxcitenames=2,uniquename=false,uniquelist=false
