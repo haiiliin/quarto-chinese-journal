@@ -1,6 +1,6 @@
 ---
-title: Quarto Chinese Journal Template
-ctitle: 中文期刊的 Quarto 模板
+title: 中文期刊的 Quarto 模板
+etitle: Quarto Chinese Journal Template
 format:
   html:
     lang: zh
@@ -11,27 +11,27 @@ format:
   chinese-journal-pdf:
     keep-tex: true
 author:
-  - name: Zhang San
+  - name: 张三
     corresponding: true
     affiliations:
-      - Tsinghua University
-  - name: Li Si
+      - 清华大学
+  - name: 李四
     affiliations:
-      - Peking University
+      - 北京大学
 abstract: |
-  This is quarto template for Chinese journals.
-keywords: [template, demo]
+  这是一个中文期刊的 Quarto 模板。
+keywords: [模板, 示例]
 bibliography: bibliography.bib
 
-cauthor:
-  - 张三 \textsuperscript{1,*}
-  - 李四 \textsuperscript{2}
-caffiliation:
-  - 1. 清华大学
-  - 2. 北京大学
-cabstract: |
-  这是一个中文期刊的 Quarto 模板。
-ckeywords: [模板, 示例]
+eauthor:
+  - ZHANG San \textsuperscript{1,*}
+  - LI Si \textsuperscript{2}
+eaffiliation:
+  - 1. Tsinghua University
+  - 2. Peking University
+eabstract: |
+  This is quarto template for Chinese journals.
+ekeywords: [template, demo]
 
 ejournal: Chinese Journal of Geotechnical Engineering
 cjournal: 岩$~~$土$~~$工$~~$程$~~$学$~~$报

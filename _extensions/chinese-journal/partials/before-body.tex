@@ -3,22 +3,28 @@
 \begin{center}
  \parbox{\textwidth}{
    \begin{center}
-     \erhao{\textbf{$ctitle$}} \\
+     \erhao{\textbf{$title$}} \\
      \vspace{10pt}
    \end{center}
    \begin{center}
-      \textbf{
-        $for(cauthor/allbutlast)$$cauthor$，$endfor$
-        $for(cauthor/last)$$cauthor$$endfor$
-      }\\[2pt]
-      \small{
-        ($for(caffiliation/allbutlast)$$caffiliation$；$endfor$
-        $for(caffiliation/last)$$caffiliation$$endfor$)}\\[7pt]
-   \end{center}
+    \textbf{
+      $for(by-author/allbutlast)$
+        $by-author.name.literal$
+        \textsuperscript{$for(by-author.affiliations/allbutlast)$$it.number$,$endfor$$for(by-author.affiliations/last)$$it.number$$endfor$$if(by-author.attributes.corresponding)$,*$endif$},
+      $endfor$
+      $for(by-author/last)$
+        $by-author.name.literal$
+        \textsuperscript{$for(by-author.affiliations/allbutlast)$$it.number$,$endfor$$for(by-author.affiliations/last)$$it.number$$endfor$$if(by-author.attributes.corresponding)$,*$endif$}
+      $endfor$
+    }\\[2pt]
+    \small{
+      ($for(by-affiliation/allbutlast)$$it.number$. $it.name$;$endfor$
+      $for(by-affiliation/last)$$it.number$. $it.name$$endfor$)}\\[7pt]
+    \end{center}
    {
     \small{
-      \textbf{摘~要：}$cabstract$ \\
-      \textbf{关键字：} $for(ckeywords/allbutlast)$$ckeywords$； $endfor$ $for(ckeywords/last)$$ckeywords$$endfor$ \\
+      \textbf{摘~要：}$abstract$ \\
+      \textbf{关键字：} $for(keywords/allbutlast)$$keywords$； $endfor$ $for(keywords/last)$$keywords$$endfor$ \\
       \textbf{中图分类号：}$classification$ \hfill
       \textbf{文献标志码：}$document_code$ \hfill
       \textbf{文章编号：}$article_number$ \\
@@ -32,28 +38,22 @@
  \parbox{\textwidth}{
    \begin{center}
       \vspace{10pt}
-      \sihao{\textbf{$title$}} \\
+      \sihao{\textbf{$etitle$}} \\
       \vspace{10pt}
    \end{center}
    \begin{center}
-      \textbf{
-        $for(by-author/allbutlast)$
-          $by-author.name.literal$
-          \textsuperscript{$for(by-author.affiliations/allbutlast)$$it.number$,$endfor$$for(by-author.affiliations/last)$$it.number$$endfor$$if(by-author.attributes.corresponding)$,*$endif$},
-        $endfor$
-        $for(by-author/last)$
-          $by-author.name.literal$
-          \textsuperscript{$for(by-author.affiliations/allbutlast)$$it.number$,$endfor$$for(by-author.affiliations/last)$$it.number$$endfor$$if(by-author.attributes.corresponding)$,*$endif$}
-        $endfor$
-      }\\[2pt]
-      \small{
-        ($for(by-affiliation/allbutlast)$$it.number$. $it.name$;$endfor$
-        $for(by-affiliation/last)$$it.number$. $it.name$$endfor$)}\\[7pt]
-   \end{center}
+    \textbf{
+      $for(eauthor/allbutlast)$$eauthor$，$endfor$
+      $for(eauthor/last)$$eauthor$$endfor$
+    }\\[2pt]
+    \small{
+      ($for(eaffiliation/allbutlast)$$eaffiliation$；$endfor$
+      $for(eaffiliation/last)$$eaffiliation$$endfor$)}\\[7pt]
+    \end{center}
    {
     \small{
-      \textbf{Abstract:}\quad $abstract$ \\
-      \textbf{Keywords:}\quad $for(keywords/allbutlast)$$keywords$；$endfor$ $for(keywords/last)$$keywords$$endfor$
+      \textbf{Abstract:}\quad $eabstract$ \\
+      \textbf{Keywords:}\quad $for(ekeywords/allbutlast)$$ekeywords$；$endfor$ $for(ekeywords/last)$$ekeywords$$endfor$
     }
    }
  }

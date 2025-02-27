@@ -29,10 +29,10 @@ format:
 
 ## Options
 
-- `cauthor`: 中文作者名字和上标
-- `caffiliation`: 中文作者单位
-- `cabstract`: 中文摘要
-- `ckeywords`: 中文关键词
+- `eauthor`: 英文作者名字和上标
+- `eaffiliation`: 英文作者单位
+- `eabstract`: 英文摘要
+- `ekeywords`: 英文关键词
 - `ejournal`: 英文期刊名
 - `cjournal`: 中文期刊名
 - `volume`: 卷号
