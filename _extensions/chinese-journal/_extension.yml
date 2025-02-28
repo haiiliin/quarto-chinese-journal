@@ -19,6 +19,7 @@ contributes:
         - uniquename=false
         - uniquelist=false
         - gblocal=chinese
+        - autocite=plain
       fig-pos: H
 
       crossref:
