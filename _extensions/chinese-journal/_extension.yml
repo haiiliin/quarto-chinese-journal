@@ -13,3 +13,4 @@ contributes:
       cite-method: biblatex
       biblio-style: gb7714-2015
       biblatexoptions: backend=biber,natbib=true,maxcitenames=2,uniquename=false,uniquelist=false
+      fig-pos: H
