@@ -30,7 +30,7 @@ eaffiliation:
   - 1. Tsinghua University
   - 2. Peking University
 eabstract: |
-  This is quarto template for Chinese journals.
+  This is a quarto template for Chinese journals.
 ekeywords: [template, demo]
 
 ejournal: Chinese Journal of Geotechnical Engineering
