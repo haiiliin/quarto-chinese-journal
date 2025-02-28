@@ -53,6 +53,4 @@ corresponding_email: xxx@xxx.cn
 
 # 引言 {#sec-intro}
 
-这是一个中文期刊的 Quarto 模板。
-
-这是一个引用：@CameronTrivedi2013。
+这是一个中文期刊的 Quarto 模板。这是一个引用：@CameronTrivedi2013。
