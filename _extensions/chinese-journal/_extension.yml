@@ -14,3 +14,9 @@ contributes:
       biblio-style: gb7714-2015
       biblatexoptions: backend=biber,natbib=true,maxcitenames=2,uniquename=false,uniquelist=false
       fig-pos: H
+
+      crossref:
+        fig-title: 图
+        tbl-title: 表
+        fig-prefix: 图
+        tbl-prefix: 表
