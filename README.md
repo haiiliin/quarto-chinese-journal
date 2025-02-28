@@ -47,6 +47,7 @@ format:
 - `funds`: 基金项目详情
 - `author_introduction`: 作者简介
 - `corresponding_email`: 通讯作者邮箱
+- `table_env`: 表格环境，默认为 `table*`
 
 ## Example
 
