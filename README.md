@@ -29,6 +29,7 @@ format:
 
 ## Options
 
+- `twocolumn`: 是否双栏排版，默认为 `true`
 - `eauthor`: 英文作者名字和上标
 - `eaffiliation`: 英文作者单位
 - `eabstract`: 英文摘要
