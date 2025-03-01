@@ -27,9 +27,9 @@ $if(twocolumn)$\twocolumn$endif$
       \textbf{摘~要：}$abstract$ \\
       \textbf{关键字：} $for(keywords/allbutlast)$$keywords$； $endfor$ $for(keywords/last)$$keywords$$endfor$ \\
       \textbf{中图分类号：}$classification$ \hfill
-      \textbf{文献标志码：}$document_code$ \hfill
-      \textbf{文章编号：}$article_number$ \\
-      \textbf{作者简介}：$author_introduction$
+      \textbf{文献标志码：}$document-code$ \hfill
+      \textbf{文章编号：}$article-number$ \\
+      \textbf{作者简介}：$author-introduction$
     }
   }
 }
@@ -62,9 +62,9 @@ $if(twocolumn)$\twocolumn$endif$
 \end{figure*}
 
 \footnote{ 
-  \textbf{收稿日期}：$received_date$；\textbf{修回日期}：$revised_date$
+  \textbf{收稿日期}：$received-date$；\textbf{修回日期}：$revised-date$
   $if(funds)$ \\\textbf{基金项目}：$funds$ $endif$
-  $if(corresponding_email)$ \\ *通信作者（E-mail: $corresponding_email$）$endif$
+  $if(corresponding-email)$ \\ *通信作者（E-mail: $corresponding-email$）$endif$
 }
 
 \pagestyle{fancy}

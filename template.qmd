@@ -41,14 +41,14 @@ volume: xx
 number: xx
 
 classification: TP18
-document_code: A
-article_number: xxxx
+document-code: A
+article-number: xxxx
 
-received_date: 2017-05-30
-revised_date: 2017-07-16
+received-date: 2017-05-30
+revised-date: 2017-07-16
 funds: 基金项目详情
-author_introduction: 作者简介
-corresponding_email: xxx@xxx.cn
+author-introduction: 作者简介
+corresponding-email: xxx@xxx.cn
 ---
 
 # 引言 {#sec-intro}

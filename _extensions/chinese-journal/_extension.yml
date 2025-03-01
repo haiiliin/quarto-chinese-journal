@@ -21,7 +21,7 @@ contributes:
         - uniquelist=false
         - gblocal=chinese
         - autocite=plain
-      fig-pos: H
+      fig-pos: "!htb"
 
       crossref:
         fig-title: 图

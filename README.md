@@ -41,13 +41,15 @@ format:
 - `volume`: 卷号
 - `number`: 期号
 - `classification`: 中图分类号
-- `document_code`: 文献标识码
-- `article_number`: 文章编号
-- `received_date`: 收稿日期
-- `revised_date`: 修回日期
+- `document-code`: 文献标识码
+- `article-number`: 文章编号
+- `received-date`: 收稿日期
+- `revised-date`: 修回日期
 - `funds`: 基金项目详情
-- `author_introduction`: 作者简介
-- `corresponding_email`: 通讯作者邮箱
+- `author-introduction`: 作者简介
+- `corresponding-email`: 通讯作者邮箱
+- `table-env`: 表格环境，默认为 `figure`
+- `table-pos`: 表格位置，默认为 `!htb`
 
 ## Example
 
