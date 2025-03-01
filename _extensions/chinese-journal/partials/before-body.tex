@@ -1,5 +1,6 @@
-% \maketitle%生成标题  
-\thispagestyle{plain}
+% 生成标题
+\twocolumn
+\begin{figure*}[t]
 \begin{center}
  \parbox{\textwidth}{
    \begin{center}
@@ -37,7 +38,7 @@
 \begin{center}
  \parbox{\textwidth}{
    \begin{center}
-      \vspace{10pt}
+      \vspace{20pt}
       \sihao{\textbf{$etitle$}} \\
       \vspace{10pt}
    \end{center}
@@ -58,6 +59,7 @@
    }
  }
 \end{center}
+\end{figure*}
 
 \footnote{ 
   \textbf{收稿日期}：$received_date$；\textbf{修回日期}：$revised_date$
@@ -65,4 +67,4 @@
   $if(corresponding_email)$ \\ *通信作者（E-mail: $corresponding_email$）$endif$
 }
 
-\begin{multicols}{2}
+\pagestyle{fancy}

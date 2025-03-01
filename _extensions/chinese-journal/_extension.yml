@@ -5,10 +5,11 @@ quarto-required: ">=1.6.0"
 contributes:
   formats:
     pdf:
-      template-partials: ["partials/before-title.tex", "partials/before-body.tex", "partials/after-body.tex"]
+      template-partials: ["partials/before-title.tex", "partials/before-body.tex"]
       documentclass: article
       pdf-engine: xelatex
       papersize: a4
+      twocolumn: true
       twoside: true
       cite-method: biblatex
       biblio-style: gb7714-2015

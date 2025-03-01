@@ -54,6 +54,7 @@
     \cfoot{}
     \rfoot{}
 }
+\thispagestyle{plain}
 
 % 脚注不编号
 \renewcommand{\thefootnote}{}
@@ -65,7 +66,7 @@
 \renewcommand\tablename{表}
 
 % 表格设置
-\usepackage{float}
+\usepackage{float,stfloats}
 \def\env{$if(table_env)$$table_env$$else$table*$endif$}
 \makeatletter
 \let\oldlt\longtable
