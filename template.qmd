@@ -1,6 +1,11 @@
 ---
 title: 中文期刊的 Quarto 模板
 etitle: Quarto Chinese Journal Template
+
+# Section numderings
+number-sections: true
+number-offset: -1
+
 format:
   html:
     lang: zh
