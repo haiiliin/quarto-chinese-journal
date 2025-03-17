@@ -1,8 +1,8 @@
 .DS_Store
 
 /.luarc.json
-/template.spl
-/template.tex
-/template_files/
-/*.bst
-/*.sty
+template.spl
+template.tex
+template_files/
+*.bst
+*.sty
