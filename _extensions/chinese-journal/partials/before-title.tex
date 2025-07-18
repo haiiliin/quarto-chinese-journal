@@ -67,26 +67,24 @@
 \renewcommand\tablename{表}
 
 % 表格设置
-\usepackage{float,stfloats}
-$if(twocolumn)$
-    \def\env{$if(table-env)$$table-env$$else$figure$endif$}
-    \makeatletter
-    \let\oldlt\longtable
-    \let\endoldlt\endlongtable
-    \def\longtable{\@ifnextchar[\longtable@i \longtable@ii}
-    \def\longtable@i[#1]{\begin{\env}[$if(table-pos)$$table-pos$$else$!htb$endif$]
-    \onecolumn
-    \begin{minipage}{0.5\textwidth}
-    \oldlt[#1]
-    }
-    \def\longtable@ii{\begin{\env}[$if(table-pos)$$table-pos$$else$!htb$endif$]
-    \onecolumn
-    \begin{minipage}{0.5\textwidth}
-    \oldlt
-    }
-    \def\endlongtable{\bottomrule\endoldlt
-    \end{minipage}
-    \twocolumn
-    \end{\env}}
-    \makeatother
-$endif$
+\usepackage{booktabs}
+
+\def\tcaption{Please redefine table caption and label before the table definition using \texttt{\textbackslash tcaption\{Table caption\}} and \texttt{\textbackslash tlabel\{tbl-label\}}.}
+\def\tlabel{tbl-label}
+
+\def\longtable{
+    \begin{$if(table.env)$$table.env$$else$table$endif$}[$table.pos$]
+    \caption{\tcaption}\vspace{-15pt}
+    \label{\tlabel}
+    \renewcommand{\caption}[1]{}
+    \renewcommand{\label}[1]{}
+    \tabular
+}
+\def\endlongtable{
+    \bottomrule
+    \endtabular
+    \end{$if(table.env)$$table.env$$else$table$endif$}
+}
+\let\tabularnewline\relax
+\let\endfirsthead\iffalse
+\let\endlastfoot\fi

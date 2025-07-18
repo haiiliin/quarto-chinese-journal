@@ -48,8 +48,8 @@ format:
 - `funds`: 基金项目详情
 - `author-introduction`: 作者简介
 - `corresponding-email`: 通讯作者邮箱
-- `table-env`: 表格环境，默认为 `figure`
-- `table-pos`: 表格位置，默认为 `!htb`
+- `table.env`: 表格环境，默认为 `table`
+- `table.pos`: 表格位置
 
 ## Example
 
