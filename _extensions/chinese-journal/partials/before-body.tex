@@ -1,7 +1,6 @@
 % 生成标题
 $if(twocolumn)$
-\twocolumn
-\begin{figure*}[t]
+\twocolumn[\begin{@twocolumnfalse}
 $endif$
 
 \begin{center}
@@ -59,13 +58,13 @@ $endif$
       \textbf{Abstract:}\quad $eabstract$ \\
       \textbf{Keywords:}\quad $for(ekeywords/allbutlast)$$ekeywords$；$endfor$ $for(ekeywords/last)$$ekeywords$$endfor$
     }
+    \vspace{20pt}
    }
  }
 \end{center}
 
 $if(twocolumn)$
-\twocolumn
-\end{figure*}
+\end{@twocolumnfalse}]
 $endif$
 
 \footnote{ 
