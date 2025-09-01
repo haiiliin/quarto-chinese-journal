@@ -4,7 +4,6 @@ etitle: Quarto Chinese Journal Template
 
 # Section numderings
 number-sections: true
-number-offset: -1
 
 format:
   html:
@@ -56,6 +55,6 @@ author-introduction: 作者简介
 corresponding-email: xxx@xxx.cn
 ---
 
-# 引言 {#sec-intro}
+# 引言 {.unnumbered #sec-intro}
 
 这是一个中文期刊的 Quarto 模板。这是一个引用：@CameronTrivedi2013。
